@@ -14,5 +14,9 @@ Các tính năng chính
 
 Lưu ý: Hình ảnh từ api nên load chậm
 
+Demo: http://gripexman-001-site1.btempurl.com/
+
+Website có 1 số lỗi như không allow iframe trên Chrome. Nhưng hoạt động trên Opera, Edge, Firefox..
+
 API nguồn từ ophim.cc
 
