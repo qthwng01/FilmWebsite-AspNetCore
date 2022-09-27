@@ -1,0 +1,1603 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #e9ba48;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #e9ba488a;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-size: 14px;
+    scroll-behavior: smooth !important;
+    position: relative;
+    min-height: 100%;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+input, button, textarea {
+    border: 0;
+    outline: none;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #10182D !important;
+}
+.display-4 {
+    color: #009eff;
+}
+.bg-dark {
+    background-color: #10182d !important;
+}
+.border-bottom {
+    border-bottom: .5px solid #ffffff47 !important;
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
+.on {
+    display: none;
+    position: absolute;
+    /*display: inline-block;*/
+    width: 23%;
+    margin: 240px 0 0 -64px;
+    background: #f3f3f3;
+    border: 1px;
+    border-radius: 5px;
+    padding: 16px 0 0 10px;
+    height: 12rem;
+    overflow: auto;
+}
+
+
+.on ul {
+   width: 100% !important;
+   justify-content: flex-start;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 5px;     
+}
+
+.on li {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 98%;
+  padding: .2rem;
+  box-shadow: 0.25rem 0.25rem 0.6rem rgb(0 0 0 / 5%), 0 0.5rem 1.125rem rgb(75 0 0 / 5%);
+  background: #ffffff78;
+  margin-bottom: 10px;
+  list-style: none;
+}  
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+.pagination::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.pagination::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.pagination::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.pagination::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.form-control-2 {
+    width: 100% !important;
+    padding: 5px !important;
+    border: 1px solid #c4c4c4;
+}
+
+.md-form form {
+    display: inline-flex;
+}
+
+.md-form .btn-search {
+    margin-left:3px;
+}
+.film-random {
+    text-align: center;
+    color: #028fe7;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+.copyright {
+    margin-left: 12px;
+}
+
+/*#load {
+    width: 100%;
+    height: 111%;
+    margin-top: -6rem;
+    position: fixed;
+    z-index: 1;
+    background: url(/ezgif.com-gif-maker.gif) no-repeat center center rgb(255 255 255);
+}*/
+/*Responsive theo max-with(nhỏ hơn -1 = 98px)*/
+@media only screen and (max-width: 1111.98px) {
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 40px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .text-center {
+        margin-top: 1rem !important;
+    }
+
+    .film-random {
+        font-size: 31px !important;
+        margin: 1rem 0 2rem 20px !important;
+        text-align: center !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+
+    .card {
+        width: 110% !important;
+        height: 72% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 235px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -9rem !important;
+    }
+
+    .head-name a {
+        font-size: 19px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 15px !important;
+        margin: 0 0 122px !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 90% !important;
+        margin: 247px 0 0 -67px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 110%;
+        height: 500px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1023.98px) {
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 40px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .text-center {
+        margin-top: 1rem !important;
+    }
+
+    .film-random {
+        font-size: 31px !important;
+        margin: 1rem 0 2rem 20px !important;
+        text-align: center !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+
+    .card {
+        width: 110% !important;
+        height: 70% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 223px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -9rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 11px !important;
+        margin: 0 0 122px !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 40% !important;
+        margin: 167px 0 0 -67px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 110%;
+        height: 500px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 833.98px) {
+    body {
+        width: 100% !important;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 2px !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 28px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .text-center {
+        margin-top: 1rem !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 145px !important;
+        text-align: center !important;
+        width: 62% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 114% !important;
+        height: 70% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 223px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -9rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 11px !important;
+        margin: 0 0 122px !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 40% !important;
+        margin: 156px 0 0 -67px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 110%;
+        height: 300px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+}
+
+/*833 -> 767*/
+@media only screen and (max-width: 767.98px) {
+    header {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 2px !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 28px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .text-center {
+        margin-top: 1rem !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 106px !important;
+        text-align: center !important;
+        width: 62% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 114% !important;
+        height: 70% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 223px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -9rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 11px !important;
+        margin: 0 0 122px !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 40% !important;
+        margin: 156px 0 0 -67px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 110%;
+        height: 300px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+}
+
+/*765 -> 735*/
+@media only screen and (max-width: 735.98px) {
+    body {
+        width: 100% !important;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 2px !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 28px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .text-center {
+        margin-top: 1rem !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 104px !important;
+        text-align: center !important;
+        width: 62% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 114% !important;
+        height: 79% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 223px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -6rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 11px !important;
+        margin: 0 0 83px !important;
+        white-space: nowrap !important;
+        width: 90% !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 40% !important;
+        margin: 156px 0 0 -67px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 110%;
+        height: 300px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+}
+
+/*735 -> 666*/
+@media only screen and (max-width: 666.98px) {
+    body {
+        width: 100% !important;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 2px !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 28px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .text-center {
+        margin-top: 1rem !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 104px !important;
+        text-align: center !important;
+        width: 62% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 114% !important;
+        height: 80% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 223px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -5rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 11px !important;
+        margin: 0 0 80px !important;
+        white-space: nowrap !important;
+        width: 90% !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 40% !important;
+        margin: 156px 0 0 -67px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 102%;
+        height: 300px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+    .title-search {
+        margin: 0 0 10px 11px !important;
+    }
+
+        .title-search h1 {
+            font-size: 24px !important;
+        }
+
+    .navigation {
+        margin-left: 11px !important;
+    }
+}
+
+/*567 -> 414*/
+@media only screen and (max-width: 567.98px) {
+    #load {
+        width: 100%;
+        height: 113%;
+        margin-top: -10rem;
+        position: fixed;
+        z-index: 1;
+        background: url(/ezgif.com-gif-maker.gif) no-repeat center center rgb(255 255 255);
+    }
+    body {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 2px !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 28px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        margin-left: 0 !important;
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 100% !important;
+        height: 76% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 223px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 290px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -8rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 12px !important;
+        margin: 0 0 105px !important;
+        white-space: nowrap !important;
+        width: 90% !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .form-control {
+        position: relative !important;
+        margin: 0 !important;
+        width: 68% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 80% !important;
+        margin: 140px 0 0 -38px !important;
+        height: 130px !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+   #watch iframe {
+        width: 102%;
+        height: 300px;
+   }    
+
+    .product-count {
+        text-align: center;
+    }
+    .title-search {
+        margin: 0 0 10px 11px !important;
+    }
+
+        .title-search h1 {
+            font-size: 24px !important;
+        }
+
+    .navigation {
+        margin-left: 13px !important;
+    }
+
+}
+
+/*413 -> 375*/
+@media only screen and (max-width: 413.98px) {
+    #load {
+        width: 100%;
+        height: 113%;
+        margin-top: -10rem;
+        position: fixed;
+        z-index: 1;
+        background: url(/ezgif.com-gif-maker.gif) no-repeat center center rgb(255 255 255);
+    }
+    body {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 28px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        margin-left: 0 !important;
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 105% !important;
+        height: 73% !important;
+    }
+
+    .card-body {
+        margin-top: 0 !important;
+        min-height: 255px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 240px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -8rem !important;
+    }
+
+    .head-name a {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 12px !important;
+        margin: 0 0 115px !important;
+        white-space: nowrap !important;
+        width: 90% !important;
+        overflow: initial !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .form-control {
+        position: relative !important;
+        margin: 0 !important;
+        width: 68% !important;
+    }
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 88% !important;
+        margin: 141px 0 0 -81px !important;
+        height: 9rem !important;
+    }
+    #watch {
+    width:88% !important;
+    margin-left:20px;
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+
+    #watch iframe {
+        width: 102%;
+        height: 300px;
+    }
+    .product-count {
+        text-align: center;
+    }
+    .title-search {
+        margin: 0 0 10px 11px !important;
+    }
+
+        .title-search h1 {
+            font-size: 24px !important;
+        }
+
+    .navigation {
+        margin-left: 11px !important;
+    }
+        .pagination {
+        width: 98% !important;
+        overflow: auto !important;
+        margin-bottom:10px !important;
+    }
+    .pagination li {
+        margin-bottom:4px;
+    }
+    .pagination::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color: #aaa; /* or add it to the track */
+    }
+
+    /* Add a thumb */
+    .pagination::-webkit-scrollbar-thumb {
+        background: #00000057;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 12px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgb(233, 186, 72);
+        color: white;
+        cursor: pointer;
+        padding: 11px;
+        border-radius: 4px;
+    }
+}
+
+/*374 -> 320*/
+@media only screen and (max-width: 374.98px) {
+    #load {
+        width: 100%;
+        height: 113%;
+        margin-top: -10rem;
+        position: fixed;
+        z-index: 1;
+        background: url(/ezgif.com-gif-maker.gif) no-repeat center center rgb(255 255 255);
+    }
+    body {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .display-4 {
+        font-size: 25px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+    }
+
+    .film-random {
+        font-size: 20px !important;
+        margin: 1rem 0 2rem 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        margin-left: 0 !important;
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 105% !important;
+        height: 68% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 201px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 200px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -9rem !important;
+    }
+
+    .head-name a {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 9px !important;
+        margin: 0 0 122px !important;
+        white-space: nowrap !important;
+        width: 90% !important;
+        overflow: initial !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .form-control {
+        position: relative !important;
+        margin: 0 !important;
+        width: 68% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 80% !important;
+        margin: 141px 0 0 -60px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #watch iframe {
+        width: 102%;
+        height: 300px;
+    }
+
+    .product-count {
+        text-align: center;
+    }
+    .title-search {
+        margin: 0 0 10px 11px !important;
+    }
+
+        .title-search h1 {
+            font-size: 24px !important;
+        }
+
+    .navigation {
+        margin-left: 11px !important;
+    }
+    .pagination {
+        width: 98% !important;
+        overflow: auto !important;
+        margin-bottom: 10px !important;
+    }
+
+        .pagination li {
+            margin-bottom: 4px;
+        }
+
+        .pagination::-webkit-scrollbar {
+            width: 5px;
+            height: 8px;
+            background-color: #aaa; /* or add it to the track */
+        }
+
+        /* Add a thumb */
+        .pagination::-webkit-scrollbar-thumb {
+            background: #00000057;
+        }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 12px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgb(233, 186, 72);
+        color: white;
+        cursor: pointer;
+        padding: 11px;
+        border-radius: 4px;
+    }
+}
+
+/*319 -> Lowest*/
+@media only screen and (max-width: 319.98px) {
+    #load {
+        width: 100%;
+        height: 113%;
+        margin-top: -10rem;
+        position: fixed;
+        z-index: 1;
+        background: url(/ezgif.com-gif-maker.gif) no-repeat center center rgb(255 255 255);
+    }
+    body {
+        width: 100% !important;
+    }
+
+    .big-contain {
+        margin-top: 1rem !important;
+        width: 100% !important;
+    }
+
+    .khung-grid {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .paginate a {
+        padding: 4px 6px !important;
+        margin: 2px !important;
+    }
+
+    .text-center {
+        width: 100% !important;
+    }
+
+    .display-4 {
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        line-height: 1.2 !important;
+    }
+
+    .film-random {
+        width: 100% !important;
+        font-size: 15px !important;
+        margin: 1rem 0 2rem 0 !important;
+        text-align: center !important;
+    }
+
+    #demoA {
+        width: 0 !important;
+        margin-left: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        margin-left: 0 !important;
+        padding: 0px 5px 0 0 !important;
+    }
+
+    .card {
+        width: 105% !important;
+        height: 65% !important;
+    }
+
+    .card-body {
+        margin-top: 1.5rem !important;
+        min-height: 200px !important;
+    }
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+        .card-header img {
+            width: 100% !important;
+            height: 185px !important;
+            object-fit: cover !important;
+        }
+
+    .pagi-card {
+        margin-bottom: -10rem !important;
+    }
+
+    .head-name a {
+        font-size: 9px !important;
+        font-weight: 700 !important;
+    }
+
+    .card-body p {
+        font-size: 7px !important;
+        margin: 0 0 122px !important;
+        white-space: nowrap !important;
+        width: 90% !important;
+        overflow: initial !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .form-control {
+        position: relative !important;
+        margin: 0 !important;
+        width: 68% !important;
+    }
+    .form-control-2 {
+        width: 100% !important;
+        padding: 5px !important;
+        border: 1px solid #c4c4c4;
+    }
+
+    .navbar-collapse {
+        flex-basis: 40% !important;
+    }
+
+    .on {
+        width: 89% !important;
+        margin: 141px 0 0 -83px !important;
+        height: 8rem !important;
+    }
+    #watch {
+        width: 88% !important;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #watch iframe {
+        width: 102%;
+        height: 300px;
+    }    
+
+    .product-count {
+        text-align: center;
+    }
+    .title-search {
+        margin: 0 0 10px 11px !important;
+    }
+    .title-search h1 {
+        font-size: 24px !important;
+    }
+    .navigation {
+        margin-left:11px !important;
+    }
+    .pagination {
+        width: 98% !important;
+        overflow: auto !important;
+        margin-bottom:10px !important;
+    }
+    .pagination li {
+        margin-bottom:4px;
+    }
+    .pagination::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color: #aaa; /* or add it to the track */
+    }
+
+    /* Add a thumb */
+    .pagination::-webkit-scrollbar-thumb {
+        background: #00000057;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 12px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgb(233, 186, 72);
+        color: white;
+        cursor: pointer;
+        padding: 11px;
+        border-radius: 4px;
+    }
+}
