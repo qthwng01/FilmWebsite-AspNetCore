@@ -10,4 +10,4 @@ Các tính năng chính
 
 Lưu ý: Hình ảnh từ api nên load chậm
 
-API nguồn từ Ổ Phim
+API nguồn từ ophim.cc
