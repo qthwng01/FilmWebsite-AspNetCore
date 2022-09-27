@@ -2,7 +2,7 @@ Film App
 
 Name: Phim Vui Vẻ
 
-Language & Tool..: C#,HTML, CSS ,JS, ASP.NET CORE 3.1 
+Language & Tool... : C#,HTML, CSS ,JS, ASP.NET CORE 3.1 
 
 Các tính năng chính
 
