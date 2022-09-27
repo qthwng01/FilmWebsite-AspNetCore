@@ -4,6 +4,8 @@ Name: Phim Vui Vẻ
 
 Language & Tool..: C#, HTML, CSS, JS, ASP.NET CORE 3.1 
 
+Giao diện: Repsonsive trên cả Tablet & Mobile
+
 Các tính năng chính
 
 1.Trang chủ xem phim, chuyển page
