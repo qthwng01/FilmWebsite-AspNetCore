@@ -1,0 +1,113 @@
+﻿
+
+@{ 
+    @foreach (var item in ViewBag.Data)
+    {
+        ViewData["Title"] = "Phim " + @item["movie"]["name"] + " -";
+    }
+}
+
+<div class="pd-wrap">
+    @foreach (var item in ViewBag.Data)
+    {
+        <div class="container">
+            <div class="heading-section">
+                <h2>@item["movie"]["name"]</h2>
+                <div class="product-name" style="margin-bottom:1rem">(@item["movie"]["origin_name"])</div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div>
+                        <div class="item" style="text-align:center">
+                            <img class="lozad" src="@item["movie"]["thumb_url"]" style="width:200px; height:300px;object-fit:contain;text-align:center">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="product-dtl">
+                        <div class="product-info">
+                            
+                            <div class="row info-film">
+                                <div class="col-md-3">
+                                    @if (@item["movie"]["episode_total"] == "")
+                                    {
+                                        <p>Số tập: Đang cập nhật</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Số tập: @item["movie"]["episode_total"]</p>
+                                    }
+                                    <p>Trạng thái: @item["movie"]["episode_current"]</p>
+                                    <p>Thời lượng: @item["movie"]["time"]</p>
+                                    <p>Năm phát hành: @item["movie"]["year"]</p>
+                                    <p>Chất lượng: @item["movie"]["quality"]</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>Ngôn ngữ: @item["movie"]["lang"]</p>
+                                    <p>Đạo diễn: @item["movie"]["director"]</p>
+                                    <p>Diễn viên: @item["movie"]["actor"]</p>
+                                    <p>
+                                        Thể loại: @foreach (var item3 in ViewBag.GetCategory)
+                                        {
+                                            <span>@item3["name"],</span>
+                                        }
+                                    </p>
+                                    <p>Quốc gia: @item["movie"]["country"][0]["name"]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify"></p>
+                        <div class="product-count" style="height:200px; overflow:auto;">
+                            <label for="size"></label>
+                            @foreach (var item2 in ViewBag.getServerData)
+                            {
+                                @*<a href="@item2.link_embed" class="round-black-btn">Tập @item2.name</a>*@
+                                if (@item2.link_embed == "")
+                                {
+                                    <button data-src="" class="btn btn-primary pr-4 pl-4 disabled">Trailer</button>
+                                }
+                                else
+                                {
+                                    <button data-src="@item2.link_embed" class="round-black-btn">@item2.name</button>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Nội dung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Trailer</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                       @Html.Raw(@item["movie"]["content"])
+                    </div>
+                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        <div class="review-heading">Updating.</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <hr />
+    <h4 style="margin-left:20px; color:#fff">Xem Phim</h4>
+    @*<video id="my_video_1" class="video-js vjs-default-skin" controls autoplay preload="auto" width="640" height="268"
+               data-setup='{}'>
+                <source src="" type="application/x-mpegURL">
+        </video>*@
+    <div id="watch">
+        <iframe width="1100" height="500"
+                src="https://www.youtube.com/embed/6eONmnFB9sw"
+                frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+</div>
+

@@ -1,0 +1,50 @@
+﻿
+
+<br />
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Phim Vui Vẻ</h1>
+</div>
+
+<h3 class="film-random">Phim Tổng Hợp</h3>
+
+<link href="~/css/paginate.css" rel="stylesheet" />
+<script src="~/js/paginate.js"></script>
+
+<div id="demoA"></div>
+
+<!-- (C) INIT PAGINATION -->
+<script>
+    paginator({
+        target: document.getElementById("demoA"),
+        total: 685,
+        click: "@Url.Action("Page")",
+        // append query string if you want
+        // click : "1-anchor.html?search=foo&sort=asc"
+    });
+</script>
+
+
+<div class="container big-contain">
+    <div class="row khung-grid">
+        @foreach (var item in ViewBag.GetInItems)
+        {
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 pagi-card">
+                <div class="card">
+                    <div class="card-header">
+                        <a asp-action="Detail" asp-route-slug="@item["slug"]"> <img class="lozad" src="https://img.ophim.cc/uploads/movies/@item["slug"]-thumb.jpg" alt="rover" /></a>
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-teal">@item["year"]</span>
+                        <span class="head-name">
+                            <a asp-action="Detail" asp-route-slug="@item["slug"]">@item["name"]</a>
+                        </span>
+                        <p>
+                            @item["origin_name"]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

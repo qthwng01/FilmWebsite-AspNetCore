@@ -1,0 +1,58 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+
+@model IPagedList<Jobject_Parse.Models.SearchDatass>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container big-contain">
+    <div class="title-search">
+        <h1 style="color:#fff">Trang tìm kiếm</h1>
+        <p style="color:#fff">Tìm kiếm: Có @ViewBag.result kết quả</p>
+        @*@if (Model.Count() == 0)
+        {
+            <p>Bộ phim vừa tìm kiếm không tồn tại. Trở lại trang chủ <a asp-action="Index" asp-controller="Home">tại đây</a></p>
+        }*@
+    </div>
+    <div class="row khung-grid">
+        @foreach (var item in Model)
+        {
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 pagi-card">
+                <div class="card">
+                    <div class="card-header">
+                        <a asp-action="Detail" asp-route-slug="@item.Slug"> <img class="lozad" src="https://img.ophim.cc/uploads/movies/@item.Slug-thumb.jpg" alt="rover" /></a>
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-teal">@item.Year</span>
+                        <span class="head-name">
+                            <a asp-action="Detail" asp-route-slug="@item.Slug">@item.Name</a>
+                        </span>
+                        <p>
+                            @item.Origin_Name
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Search", new { page = page, currentFilter = @ViewData["currentfilter"] }),
+        new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" },
+        })
+
+    @section Scripts{
+        <script>
+            $(document).ready(function () {
+                $('ul.pagination > li.disabled > a').addClass('page-link');
+            });
+        </script>
+    }
+</div>

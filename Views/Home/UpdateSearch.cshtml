@@ -1,0 +1,31 @@
+﻿@model Jobject_Parse.Models.UpdateSearch
+
+@{
+    ViewData["Title"] = "Update Search";
+}
+
+
+<div class="container big-contain">
+    <div class="row khung-grid">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 pagi-card">
+            <div class="title" style="width:230% !important">
+                <h3>Trang quản trị cập nhật tìm kiếm.</h3>
+            </div>
+                <form asp-action="UpdateSearch">
+                    <div style="margin-bottom:1rem;">
+                        <label for="exampleInputEmail1">Start Page</label>
+                        <input type="text" class="form-control-2" asp-for="startPage">
+                    </div>
+                    <div style="margin-bottom:1rem;">
+                        <label for="exampleInputPassword1">End Page</label>
+                        <input type="text" class="form-control-2" asp-for="endPage">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            <form style="margin-top:10px">
+                <button type="submit" class="btn btn-primary" asp-action="RemoveDuplicates">Remove Duplicates: @ViewBag.dup</button>
+            </form>
+            </div>
+    </div>
+</div>
+
